@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator</title>
+</head>
+
+<body>
+  <h2>Left Leaning</h2>
+  {% for story in left_stories %}
+  <ul>
+    <li><a href="{{ story.url }}">{{ story.headline }}</a></li>
+  </ul>
+  {% endfor %}
+  <hr>
+  <h2>Right Leaning</h2>
+  {% for story in right_stories %}
+  <ul>
+    <li><a href="{{ story.url }}">{{ story.headline }}</a></li>
+  </ul>
+  {% endfor %}
+</body>
+
+</html>
