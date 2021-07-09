@@ -1,0 +1,12 @@
+[run]
+source = core
+
+omit = env
+
+
+[html]
+title = news-aggregator Python Test Coverage Report
+directory = ../reports/cover
+
+[xml]
+output = ../reports/coverage.xml
